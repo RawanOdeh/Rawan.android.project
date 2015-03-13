@@ -85,7 +85,7 @@ public class MainActivity extends Activity {
     	
     	else if((random-5) <= userGess && (random+5) >= userGess){
     		
-    		Toast.makeText(getApplicationContext(), "The Random number is"+r, Toast.LENGTH_LONG).show();
+    		//Toast.makeText(getApplicationContext(), "The Random number is"+r, Toast.LENGTH_LONG).show();
     		Toast.makeText(getApplicationContext(), "Your Gess very close", Toast.LENGTH_LONG).show();
     		
     		
@@ -94,14 +94,14 @@ public class MainActivity extends Activity {
     	
     	else if((userGess) < random){
     		
-    		Toast.makeText(getApplicationContext(), "The Random number is"+r, Toast.LENGTH_LONG).show();
+    		//Toast.makeText(getApplicationContext(), "The Random number is"+r, Toast.LENGTH_LONG).show();
     		Toast.makeText(getApplicationContext(), "Your Gess smaller", Toast.LENGTH_LONG).show();
     		
     	}
     	//if greate
     	
     	else{
-    		Toast.makeText(getApplicationContext(), "The Random number is"+r, Toast.LENGTH_LONG).show();
+    		//Toast.makeText(getApplicationContext(), "The Random number is"+r, Toast.LENGTH_LONG).show();
     		Toast.makeText(getApplicationContext(), "Your Gess grater", Toast.LENGTH_LONG).show();
     		
     	}
