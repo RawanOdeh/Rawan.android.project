@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Random</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="gess">Guess a Random Number From 0 TO 1000</string>
+    <string name="check">Check</string>
+    <string name="play">play Againe</string>
+
+</resources>
