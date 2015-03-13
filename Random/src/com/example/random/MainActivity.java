@@ -33,6 +33,7 @@ public class MainActivity extends Activity {
        
         
       // final int userNumber=Integer.parseInt(userText);
+        //generate random number
         random = (int) (Math.random() * (1000 - 0)) + 0;
         
         check.setOnClickListener(new OnClickListener() {
@@ -43,11 +44,11 @@ public class MainActivity extends Activity {
 				
 				//randomFunction(userNumber);
 				 userTxt=txt.getText().toString();
-				
 				 userNumber=Integer.parseInt(userTxt);
+				 check.setText("Check");
 				{
 				 if( userNumber<1001){
-				 check.setText("Check");
+				 
 				randomFunction(userNumber);
 				 }
 				 else{
@@ -67,33 +68,40 @@ public class MainActivity extends Activity {
     	//
     	String r=""+random;
     	//Toast.makeText(getApplicationContext(), "The Random number is"+r, Toast.LENGTH_LONG).show();
+    	 //generate random number function
+    	
+    	//if true
     	if(random==userGess){
     		Toast.makeText(getApplicationContext(), "Your Gess True", Toast.LENGTH_LONG).show();
+    		Toast.makeText(getApplicationContext(), "The Random number is"+r, Toast.LENGTH_LONG).show();
     		check.setText("Try Againe");
-    		txt.setText(" ");
+    		
     		random = (int) (Math.random() * (1000 - 0)) + 0;
     		
     		
     		
     	}
+    	//if in range
     	
     	else if((random-5) <= userGess && (random+5) >= userGess){
     		
-    		//Toast.makeText(getApplicationContext(), "The Random number is"+r, Toast.LENGTH_LONG).show();
+    		Toast.makeText(getApplicationContext(), "The Random number is"+r, Toast.LENGTH_LONG).show();
     		Toast.makeText(getApplicationContext(), "Your Gess very close", Toast.LENGTH_LONG).show();
     		
     		
     	}
+    	//if small
     	
     	else if((userGess) < random){
     		
-    		//Toast.makeText(getApplicationContext(), "The Random number is"+r, Toast.LENGTH_LONG).show();
+    		Toast.makeText(getApplicationContext(), "The Random number is"+r, Toast.LENGTH_LONG).show();
     		Toast.makeText(getApplicationContext(), "Your Gess smaller", Toast.LENGTH_LONG).show();
     		
     	}
+    	//if greate
     	
     	else{
-    		//Toast.makeText(getApplicationContext(), "The Random number is"+r, Toast.LENGTH_LONG).show();
+    		Toast.makeText(getApplicationContext(), "The Random number is"+r, Toast.LENGTH_LONG).show();
     		Toast.makeText(getApplicationContext(), "Your Gess grater", Toast.LENGTH_LONG).show();
     		
     	}
