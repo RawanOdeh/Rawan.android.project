@@ -43,13 +43,16 @@ public class MainActivity extends Activity {
 				
 				//randomFunction(userNumber);
 				 userTxt=txt.getText().toString();
+				
 				 userNumber=Integer.parseInt(userTxt);
-				 if(userTxt.length()>=0 && userTxt.length()<=3){
+				{
+				 if( userNumber<1001){
 				 check.setText("Check");
 				randomFunction(userNumber);
 				 }
 				 else{
-					 Toast.makeText(null, "your text is false", Toast.LENGTH_LONG).show();
+					 Toast.makeText(getApplicationContext(), "your text is invalid", Toast.LENGTH_LONG).show();
+				 }
 				 }
 				//Toast.makeText(getApplicationContext(), userTxt, Toast.LENGTH_LONG).show();
 				
